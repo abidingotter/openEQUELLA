@@ -307,10 +307,6 @@
   width: 195px;
 }
 
-#searchform .wizard-controls .autocompleteControl input[type="text"] {
-  width: 385px;
-}
-
 div.error-receipt {
   background-color: #fdd;
   padding: 5px;

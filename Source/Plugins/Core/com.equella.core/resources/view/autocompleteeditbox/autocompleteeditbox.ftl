@@ -8,13 +8,15 @@
 
 <@div id="${id}autocompleteControl" class="autocompleteControl">
 	<#if m.canSelect>
-		<@autocomplete section=s.editbox autoSubmitButton=s.selectTerm />
-		<@button section=s.selectTerm size="medium" />
+	  <div class="autocompleteControl-selector">
+		  <@autocomplete section=s.editbox autoSubmitButton=s.selectTerm />
+		  <@button section=s.selectTerm size="medium" />
+		</div>
 	</#if>
 
 	<#if m.errorMessage??>
 		<p class="error">${m.errorMessage}</p>
 	</#if>
-	
+
 	<@render s.termsTable />
 </@div>
